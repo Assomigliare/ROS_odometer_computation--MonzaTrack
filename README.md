@@ -24,15 +24,20 @@ It is the Monza track -- You can find it through Google Map
 	- When the vehicle reaches within 5 meters of a checkpoint, it records the sector's elapsed time and average speed.
 
 
-Custom messages:
-	  int8 current_sector
-    float64 current_sector_time
-    float64 current_sector_mean_speed
+Custom messages: 
+```
+int8 current_sector
+float64 current_sector_time
+float64 current_sector_mean_speed
+```
 
 Stratup command:
-    roslaunch first_project launch.launch
 
-  Alternatively, nodes can be run respectively:
-	  rosrun first_project odometer
-    rosrun first_project gps_to_odom
-    rosrun first_project sector_times
+`roslaunch first_project launch.launch`
+
+Alternatively, nodes can be run respectively:
+```
+rosrun first_project odometer
+rosrun first_project gps_to_odom
+rosrun first_project sector_times
+```
