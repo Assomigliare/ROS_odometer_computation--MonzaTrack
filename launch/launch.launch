@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="first_project" type="odometer" name="odometer" output="screen" />
+    <node pkg="first_project" type="gps_odometer" name="gps_odometer" output="screen" />
+    <node pkg="first_project" type="sector_times" name="sector_times" output="screen" />
+     <node name="rviz" pkg="rviz" type="rviz" output="screen" args="-d $(find first_project)/rviz/first_project.rviz" />
+</launch>
